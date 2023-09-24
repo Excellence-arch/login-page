@@ -1,6 +1,7 @@
 body {
-  font: 400 14px arial;
-  font-family:  Helvetica Neue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Arial,Lucida Grande,sans-serif;
+  font: 400 12px arial;
+  font-family: Helvetica Neue-Light, Helvetica Neue Light, Helvetica Neue,
+    Helvetica, Roboto, Arial, Lucida Grande, sans-serif;
 }
 
 .text-orange {
@@ -16,7 +17,7 @@ body {
   --bs-btn-bg: #ff6a00;
   --bs-btn-border-color: rgb(245, 164, 13);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #ff6a00;
+  --bs-btn-hover-bg: #de5d00;
   --bs-btn-hover-border-color: #ff6a00;
   --bs-btn-focus-shadow-rgb: 225, 83, 97;
   --bs-btn-active-color: #fff;
@@ -28,9 +29,9 @@ body {
   --bs-btn-disabled-border-color: rgb(255, 199, 94);
 }
 
-#forgotPassword {
+/* #forgotPassword {
   text-align: right;
-}
+} */
 
 .forms {
   display: block;
@@ -46,16 +47,13 @@ body {
   background-color: var(--bs-body-bg);
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
-  border-top: none;
-  border-left: none;
-  border-right: none;
   border-radius: none !important;
 }
 
 .forms:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
-  border-color: #ff6a00;
+  border-color: #1996e6;
   outline: 0;
 }
 
@@ -64,7 +62,7 @@ body {
   height: 48px;
 }
 
-.input-box {
+/* .input-box {
   display: flex;
   align-items: center;
 }
@@ -73,4 +71,20 @@ body {
   z-index: 1;
   width: 20px;
   cursor: pointer;
+} */
+
+.input-margin {
+  margin-top: 5px !important;
+}
+
+.hover-orange:hover {
+  color: #ff6a00 !important;
+}
+
+.margin-0 {
+  margin-bottom: 0 !important;
+}
+
+.text-ash {
+  color: #b4b4b4b5;
 }
