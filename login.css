@@ -77,3 +77,29 @@ body {
 .text-ash {
   color: #b4b4b4b5;
 }
+
+#signIn {
+  /* border-bottom: 1px solid #ff6a00; */
+  color: #ff6a00;
+  cursor: pointer;
+}
+
+#signIn:hover {
+  /* border-bottom: 1px solid #ff6a00; */
+  color: #ff6a00;
+}
+
+#join {
+  /* border-bottom: 1px solid black; */
+  color: black;
+  cursor: pointer;
+}
+
+#join:hover {
+  /* border-bottom: 1px solid #ff6a00; */
+  color: #ff6a00;
+}
+
+#registerForm {
+  display: none;
+}

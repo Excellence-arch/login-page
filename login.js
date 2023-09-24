@@ -10,3 +10,21 @@ const toggleVisibility = () => {
     image.alt = "view"
   }
 };
+
+const signin = () => {
+  signIn.style.color = "#ff6a00";
+  // signIn.style.borderBottom = "1px solid #ff6a00";
+  join.style.color = "black";
+  // join.style.borderBottom = "1px solid black";
+  loginForm.style.display = "block";
+  registerForm.style.display = "none";
+}
+
+const register = () => {
+  signIn.style.color = "black";
+  // signIn.style.borderBottom = "1px solid black";
+  join.style.color = "#ff6a00";
+  // join.style.borderBottom = "1px solid #ff6a00";
+  loginForm.style.display = "none";
+  registerForm.style.display = "block";
+}

