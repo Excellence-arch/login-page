@@ -62,17 +62,6 @@ body {
   height: 48px;
 }
 
-/* .input-box {
-  display: flex;
-  align-items: center;
-}
-
-.input-box img {
-  z-index: 1;
-  width: 20px;
-  cursor: pointer;
-} */
-
 .input-margin {
   margin-top: 5px !important;
 }
