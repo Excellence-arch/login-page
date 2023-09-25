@@ -78,32 +78,6 @@ body {
   color: #b4b4b4b5;
 }
 
-#signIn {
-  /* border-bottom: 1px solid #ff6a00; */
-  color: #ff6a00;
-  cursor: pointer;
-}
-
-#signIn:hover {
-  /* border-bottom: 1px solid #ff6a00; */
-  color: #ff6a00;
-}
-
-#join {
-  /* border-bottom: 1px solid black; */
-  color: black;
-  cursor: pointer;
-}
-
-#join:hover {
-  /* border-bottom: 1px solid #ff6a00; */
-  color: #ff6a00;
-}
-
-#registerForm {
-  display: none;
-}
-
 .pointer {
   cursor: pointer;
 }
@@ -112,15 +86,21 @@ body {
   display: none;
 }
 
-.greater-than {
-  background: #a52834;
-  width: 140px !important;
-  height: 400px !important;
-  clip-path: polygon(36% 0, 60% 50%, 33% 100%, 0% 100%, 25% 50%, 0% 0%);
+.text-wine {
+  color: #a52834;
 }
 
-.bg-september {
-  background: #a52834 !important;
-  clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 5% 51%, 0% 0%);
-  font-style: italic;
+#background {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/EA-9474.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 70vh;
+}
+
+.fonts {
+  font-size: inherit;
+  font-weight: 100 !important;
 }
