@@ -111,3 +111,16 @@ body {
 #qrcode {
   display: none;
 }
+
+.greater-than {
+  background: #a52834;
+  width: 140px !important;
+  height: 400px !important;
+  clip-path: polygon(36% 0, 60% 50%, 33% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.bg-september {
+  background: #a52834 !important;
+  clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 5% 51%, 0% 0%);
+  font-style: italic;
+}
