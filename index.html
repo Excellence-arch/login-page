@@ -32,7 +32,16 @@
               method="POST"
               id="loginForm"
             >
-              <label for="email" class="fw-bold">Account:</label>
+              <div class="d-flex justify-content-between">
+                <label for="email" class="fw-bold">Account:</label>
+                <img
+                  class="pointer"
+                  src="https://gw.alicdn.com/tps/i1/TB1VHK4KFXXXXbPXFXXwxCdHXXX-47-47.png"
+                  alt="QR code"
+                  onclick="qrlogin()"
+                />
+              </div>
+
               <input
                 class="forms mb-3 input-margin"
                 type="email"
@@ -119,6 +128,34 @@
                 </div>
               </div>
             </form>
+
+            <div id="qrcode">
+              <div class="d-flex justify-content-end">
+                <img
+                  src="https://gw.alicdn.com/tps/i4/TB19tEIKXXXXXb.XVXXWA_BHXXX-48-48.png"
+                  alt="Login form"
+                  class="pointer"
+                  onclick="displayForm()"
+                />
+              </div>
+              <div class="text-center">
+                <img
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=google.com"
+                  alt="qr code"
+                  id="qr"
+                  class="mx-auto"
+                />
+                <p class="fw-bold mt-3">
+                  Scan the QR code with the Aliaba.com app to sign in
+                </p>
+                <p>
+                  Use the QR code in the
+                  <a href="#" class="text-decoration-none">Alibaba.com</a> app
+                  to scan.
+                </p>
+              </div>
+            </div>
+
             <form action="" id="registerForm">
               <div class="d-flex">
                 <div class="d-flex justify-content-around mx-auto">
