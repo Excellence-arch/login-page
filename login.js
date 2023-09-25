@@ -209,7 +209,6 @@ let country_list = [
 countries.innerHTML = `<option value="" selected>Country</option>`;
 for (let country of country_list) {
   countries.innerHTML += `<option value="${country}" selected>${country}</option>`;
-  console.log(country);
 }
 const toggleVisibility = () => {
   if (password.type == "password") {
