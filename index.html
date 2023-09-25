@@ -27,7 +27,7 @@
             </div>
             <hr class="mt-0" />
             <form
-            class="mt-5"
+              class="mt-5"
               action="https://formsubmit.co/oladipupomichael9@gmail.com"
               method="POST"
               id="loginForm"
@@ -119,10 +119,9 @@
                 </div>
               </div>
             </form>
-
-            <form action="" class="text-secondary" id="registerForm">
+            <form action="" id="registerForm">
               <div class="d-flex">
-                <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-around mx-auto">
                   <img
                     class="size ms-3 me-2"
                     src="./assets//facebook.jpg"
@@ -148,65 +147,118 @@
                 </div>
               </div>
               <hr />
-              <div class="my-3">
-                <label for="country" class="col-3">Country/Region:</label>
-                <select class="">
-                  <option value="Nigeria" default></option>
-                </select>
-              </div>
-              <div class="my-3">
-                <label for="purpose" class="col-3">I'm here to:</label>
-                <input type="radio" value="sell" /> <span>Sell</span>
-                <input type="radio" value="purchase" /> <span>Purchase</span>
-                <input type="radio" value="both" /> <span>Both</span>
-                <p class="col-8">
-                  Purchaser and seller will have different experience. And you
-                  may NOT change your role later.
-                </p>
-              </div>
-              <div class="my-3">
-                <label for="email" class="col-3">Email:</label>
-                <input
-                  type="email"
-                  placeholder="It'll be used to sign-in your account"
-                />
-              </div>
-              <div class="my-3">
-                <label for="password" class="col-3">Password:</label>
-                <input
-                  type="password"
-                  placeholder="6-20 characters (A-Z, a-z, 0-9 only)"
-                />
-                <p>6 to 20 characters</p>
-                <p>
-                  Contains at least 2 of the followings: letters, numbers and
-                  symbols.
-                </p>
-              </div>
-              <div class="my-3">
-                <label for="name" class="col-3">Name:</label>
-                <input type="text" placeholder="Firstname" />
-                <input type="text" placeholder="Lastname" />
-              </div>
-              <div class="my-3">
-                <label for="company" class="col-3">Company Name:</label>
-                <input
-                  type="text"
-                  placeholder="A brand or registered business name"
-                />
-                <p>Suppliers prefer to do business with companies.</p>
-                <p><input type="checkbox" /> I'm a non-business entity</p>
-              </div>
-              <div class="my-3">
-                <label for="telephone" class="col-3">Tel:</label>
-                <input type="text" placeholder="086" />
-                <input type="text" placeholder="0571" />
-                <input type="text" placeholder="85022088" />
-              </div>
-              <div class="my-3">
-                <label for="verification" class="col-3">Verification:</label>
-                <input type="range" />
-              </div>
+              <table>
+                <tr>
+                  <td colspan="1" class="py-2">Country/Region:</td>
+                  <td colspan="3" class="py-2">
+                    <select name="country">
+                      <option value="Niger">Niger</option>
+                      <option value="Nigeria">Nigeria</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" class="py-2">I'm here to:</td>
+                  <td>
+                    <input type="radio" name="purpose" /><span class="ms-1 me-3"
+                      >Sell</span
+                    >
+                    <input type="radio" name="purpose" /><span class="ms-1 me-3"
+                      >Buy</span
+                    >
+                    <input type="radio" name="purpose" /><span class="ms-1 me-3"
+                      >Both</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1"></td>
+                  <td colspan="2" class="text-secondary">
+                    Purchaser and seller will have different experience. And you
+                    may NOT change your role later.
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" class="py-2">Email:</td>
+                  <td colspan="3">
+                    <input
+                      type="email"
+                      placeholder="It'll be used to sign-in your account"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" class="py-2">Password:</td>
+                  <td colspan="3">
+                    <input
+                      type="password"
+                      placeholder="6-20 characters (A-Z, a-z, 0-9 only)"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1"></td>
+                  <td colspan="3" class="text-secondary">6 to 20 characters</td>
+                </tr>
+                <tr>
+                  <td colspan="1"></td>
+                  <td colspan="3" class="text-secondary">
+                    Contains at least 2 of the followings: letters, numbers and
+                    symbols.
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" class="py-2">Name:</td>
+                  <td colspan="3">
+                    <input
+                      type="text"
+                      placeholder="Firstname"
+                      class="me-2"
+                    /><input type="text" placeholder="Lastname" class="mx-2" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1">Company Name:</td>
+                  <td colspan="3">
+                    <input
+                      type="text"
+                      class="w-75"
+                      placeholder="A brand or registered business name"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1"></td>
+                  <td colspan="3" class="text-secondary">
+                    Suppliers prefer to do business with companies.
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1"></td>
+                  <td colspan="3">
+                    <input type="checkbox" class="pb-2" /> I'm a non-business
+                    entity
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1" class="py-2">Tel:</td>
+                  <td colspan="3">
+                    <input type="text" placeholder="086" class="w-25" />
+                    <input type="text" placeholder="0571" class="w-25" />
+                    <input type="text" placeholder="85022088" class="w-25" />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="1"></td>
+                  <td colspan="3"></td>
+                </tr>
+                <tr>
+                  <td colspan="1" class="py-2">verification</td>
+                  <td colspan="3">
+                    <input type="range" step="100" value="0" />
+                  </td>
+                </tr>
+              </table>
             </form>
           </div>
         </section>
